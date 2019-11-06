@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package go.micro.srv.getSmscd;
+
+service GetSmscd {
+	rpc Call(Request) returns (Response) {}
+
+}
+
+
+message Request {
+	string phone = 1;
+	string text=2;
+	string uuid=3;
+
+}
+
+message Response {
+	string errno = 1;
+	string errmsg=2;
+}

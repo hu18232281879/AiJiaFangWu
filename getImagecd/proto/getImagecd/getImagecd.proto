@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package go.micro.srv.getImagecd;
+
+service GetImagecd {
+	rpc Call(Request) returns (Response) {}
+}
+
+
+
+message Request {
+	string uuid = 1;
+}
+
+message Response {
+	string errno=1;
+	string errmsg=2;
+	bytes img=3;
+}
+

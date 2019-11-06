@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package go.micro.srv.getArea;
+
+service GetArea {
+	rpc Call(Request) returns (Response) {}
+
+}
+message Request {
+
+}
+
+message Response {
+	string errno=1;
+	string errmsg = 2;
+	repeated area data=3;
+}
+
+message area {
+	int32 aid=1;
+	string aname=2;
+
+}
