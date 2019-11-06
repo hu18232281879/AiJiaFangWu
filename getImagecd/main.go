@@ -21,7 +21,7 @@ func main() {
 		micro.Name("go.micro.srv.getImagecd"),
 		micro.Version("latest"),
 		micro.Registry(reg),
-		micro.Address("192.168.137.130:10000"),
+		micro.Address("192.168.137.130:15001"),
 	)
 
 	// Initialise service

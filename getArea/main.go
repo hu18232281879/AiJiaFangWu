@@ -22,7 +22,7 @@ func main() {
 		micro.Name("go.micro.srv.getArea"),
 		micro.Version("latest"),
 		micro.Registry(reg),
-		micro.Address("192.168.137.130:10001"),
+		micro.Address("192.168.137.130:15000"),
 	)
 
 	// Initialise service

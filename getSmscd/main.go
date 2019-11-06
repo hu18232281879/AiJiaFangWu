@@ -21,7 +21,7 @@ func main() {
 		micro.Name("go.micro.srv.getSmscd"),
 		micro.Version("latest"),
 		micro.Registry(reg),
-		micro.Address("192.168.137.130:10003"),
+		micro.Address("192.168.137.130:15002"),
 	)
 
 	// Initialise service
